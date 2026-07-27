@@ -8,6 +8,20 @@ Cinq maquettes statiques et autonomes :
 4. Skippr
 5. ACME.BOT
 
+## Prévisualisation GitHub Pages
+
+URL de publication : https://jeanjean59800.github.io/french-market-previews/
+
+Pages individuelles :
+
+- `/lnkflow/`
+- `/crawlraven/`
+- `/migma/`
+- `/skippr/`
+- `/acmebot/`
+
+La branche de publication dédiée est `gh-pages`, dossier `/ (root)`.
+
 ## Ouvrir localement
 
 Ouvrir `index.html` directement dans un navigateur, ou lancer :
@@ -28,21 +42,4 @@ Toutes les pages contiennent :
 <meta name="robots" content="noindex,nofollow">
 ```
 
-Elles peuvent donc servir de prévisualisations privées avant tout accord du prospect.
-
-## Publier avec GitHub Pages
-
-Le dépôt peut être publié directement depuis la branche `main`, dossier `/ (root)`.
-
-Après avoir créé un dépôt public vide :
-
-```bash
-git init
-git add .
-git commit -m "Publish French market concepts"
-git branch -M main
-git remote add origin https://github.com/Jeanjean59800/french-market-concepts.git
-git push -u origin main
-```
-
-Dans GitHub : `Settings` → `Pages` → `Deploy from a branch` → `main` → `/ (root)`.
+Un fichier `robots.txt` est également présent sur la branche de publication pour demander aux moteurs de ne rien explorer. Ces mesures réduisent l’indexation, mais les URL GitHub Pages restent publiques.
